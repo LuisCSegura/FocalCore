@@ -1,0 +1,30 @@
+<div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar-wrapper">
+        <div class="list-group">
+
+            <a routerLink="/" routerLinkActive="item-selected" [routerLinkActiveOptions]="{exact:
+                true}" class="list-group-item">
+                <img src="assets/images/CartIcon512.png" class="menu-icon">VENTAS</a>
+            <a routerLink="/orders" routerLinkActive="item-selected" class="list-group-item">
+                <img src="assets/images/OrderIcon512.png" class="menu-icon">PEDIDOS</a>
+            <a routerLink="/products" routerLinkActive="item-selected" class="list-group-item">
+                <img src="assets/images/BasketIcon512.png" class="menu-icon">PRODUCTOS</a>
+            <a routerLink="/clients" routerLinkActive="item-selected" class="list-group-item">
+                <img src="assets/images/ClientIcon512.png" class="menu-icon">CLIENTES</a>
+            <a routerLink="/settings" routerLinkActive="item-selected" class="list-group-item">
+                <img src="assets/images/SettingIcon512.png" class="menu-icon">GESTIÓN</a>
+        </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <router-outlet>
+        </router-outlet>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
